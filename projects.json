@@ -1,16 +1,24 @@
-[
-    {
-        "title": "Konfiguracja Sieci VLAN",
-        "description": "Proces konfiguracji sieci VLAN w środowisku symulacyjnym Cisco Packet Tracer",
-        "link": "projekty/projekt-1.html",
-        "image": "img/sieci.jpg",
-        "category": "Network",
-        "keywords": ["VLAN", "Cisco", "Packet Tracer"]
-    },
-    {
+[    {
         "title": "Strona profilowa",
         "description": "Osobista strona internetowa prezentująca moje umiejętności, edukację i informacje o mnie.",
-        "link": "projekty/projekt-3.html",
+        "link": "projects/Strona_Profilowa.pdf",
+        "image": "img/code.jpg",
+        "category": "Programming",
+        "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
+    },
+    
+    {
+        "title": "Konfiguracja LAN z serwerem DHCP",
+        "description": "Proces konfiguracji sieci LAN z serwerem DHCP w środowisku symulacyjnym Cisco Packet Tracer.",
+        "link": "projects/LAN_DHCP.pdf",
+        "image": "img/sieci.jpg",
+        "category": "Network",
+        "keywords": ["LAN","DHCP","Cisco Packet Tracer"]
+    },
+    {
+        "title": "Portfolio",
+        "description": "Portfolio w postaci strony internetowej zawierające zrealizowane projekty.",
+        "link": "projects/Portfolio.pdf",
         "image": "img/code.jpg",
         "category": "Programming",
         "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
@@ -18,7 +26,7 @@
     {
         "title": "Konfiguracja Windows Server",
         "description": "Proces instalacji i konfiguracji Windows Server 2022 na maszynie wirtualnej.",
-        "link": "projekty/projekt-2.html",
+        "link": "projects/LAN_DHCP.pdf",
         "image": "img/windows.jpg",
         "category": "OS",
         "keywords": ["Windows Server",  "VirtualBox"]
@@ -26,7 +34,7 @@
     {
         "title": "Konwerter żużlowy",
         "description": "Aplikacja umożliwiająca konwersję wyników meczów żużlowych z formatu tabelarycznego na biegowy.",
-        "link": "projekty/projekt-3.html",
+        "link": "projects/Konwerter.pdf",
         "image": "img/code.jpg",
         "category": "Programming",
         "keywords": ["HTML", "XAMPP", "PHP", "Apache"]
