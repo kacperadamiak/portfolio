@@ -24,12 +24,12 @@
         "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
     },
     {
-        "title": "Konfiguracja Windows Server",
-        "description": "Proces instalacji i konfiguracji Windows Server 2022 na maszynie wirtualnej.",
-        "link": "projects/LAN_DHCP.pdf",
+        "title": "Konfiguracja Active Directory",
+        "description": "Instalacja Windows Server 2016 oraz konfiguracja Active Directory w środowisku wirtualnym",
+        "link": "projects/win_server_conf.pdf",
         "image": "img/windows.jpg",
         "category": "OS",
-        "keywords": ["Windows Server",  "VirtualBox"]
+        "keywords": ["Windows Server","AD","VirtualBox"]
     },
     {
         "title": "Konwerter żużlowy",
