@@ -17,7 +17,7 @@
                 <h2><i class="fa-solid fa-briefcase"></i> portfolio</h2>
             </div> 
             <div class="name">
-                <span class="highlight">Kacper Adamiak</span>
+                <span class="highlight"></span>
             </div>
             <div class="menu">
                 <nav>
@@ -33,11 +33,15 @@
     <div class="container">
     
         <div class="filter">
-            <button class="filter-button" id="all-button" onclick="filterProjects('All', this)">Wszystkie</button>
-            <button class="filter-button" onclick="filterProjects('Network', this)">Sieci komputerowe</button>
-            <button class="filter-button" onclick="filterProjects('Programming', this)">Programowanie</button>
-            <button class="filter-button" onclick="filterProjects('OS', this)">Systemy operacyjne</button>
+            <button class="main-button" onclick="toggleFilters()">Kategoria</button>
+            <div class="filter-buttons">
+                <button class="filter-button" id="all-button" onclick="filterProjects('All', this)">Wszystkie</button>
+                <button class="filter-button" onclick="filterProjects('Network', this)">Sieci komputerowe</button>
+                <button class="filter-button" onclick="filterProjects('Programming', this)">Programowanie</button>
+                <button class="filter-button" onclick="filterProjects('OS', this)">Systemy operacyjne</button>
+            </div>
         </div>
+        
     
         <main>
             <section class="projects" id="projects"></section>
@@ -48,7 +52,33 @@
 
 
     <script src="display_projects.js"></script>
+    <script>
+        function toggleFilters() {
+                const filterButtons = document.querySelector('.filter-buttons');
+                filterButtons.style.display = (filterButtons.style.display === 'block') ? 'none' : 'block';
+            }
 
+            document.addEventListener('click', function(event) {
+                const filter = document.querySelector('.filter');
+                const filterButtons = document.querySelector('.filter-buttons');
+                
+                if (!filter.contains(event.target)) {
+                    filterButtons.style.display = 'none';
+                }
+            });
+
+            const filterOptions = document.querySelectorAll('.filter-button');
+            filterOptions.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    
+                    const mainButton = document.querySelector('.main-button');
+                    mainButton.textContent = button.textContent; 
+                    
+                    const filterButtons = document.querySelector('.filter-buttons');
+                    filterButtons.style.display = 'none';
+                });
+            });
+    </script>
     <script src="title.js"></script>
 </body>
 </html>
