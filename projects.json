@@ -1,4 +1,12 @@
-[    {
+[     {
+    "title": "Podział LAN na podsieci",
+    "description": "Proces podziału sieci na dwie równe podsieci oraz nadanie statycznych adresów dla urządzeń końcowych.",
+    "link": "projects/Podsieci.pdf",
+    "image": "img/sieci.jpg",
+    "category": "Network",
+    "keywords": ["LAN","Subnetting","Cisco Packet Tracer"]
+    },
+    {
         "title": "Strona profilowa",
         "description": "Osobista strona internetowa prezentująca moje umiejętności, edukację i informacje o mnie.",
         "link": "projects/Strona_Profilowa.pdf",
