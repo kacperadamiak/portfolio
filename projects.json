@@ -46,5 +46,13 @@
         "image": "img/code.jpg",
         "category": "Programming",
         "keywords": ["HTML", "XAMPP", "PHP", "Apache"]
-    }
+    },
+         {
+        "title": "Konfiguracja VLAN na przełączniku",
+        "description": "Utworzenie dwóch VLAN-ów na przełączniku, przypisanie portów oraz testowanie komunikacji między urządzeniami.",
+        "link": "projects/vlan.pdf",
+        "image": "img/sieci.jpg",
+        "category": "Network",
+        "keywords": ["VLAN","Cisco Packet Tracer"]
+        }
 ]
