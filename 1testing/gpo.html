@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AK</title>
+    <link rel="stylesheet" href="style-project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/briefcase-solid.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h2>
+                    <a  class="no-style-link" href="index.html" rel="noopener noreferrer">
+                      <i class="fa-solid fa-briefcase"></i> portfolio
+                    </a>
+                  </h2>
+            </div> 
+
+            <div class="name">
+                <span class="highlight"></span>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="https://kacperadamiak.info" target="_blank"><img src="projekty/img/ikonka3.png" alt="Profil" class="icon"></a></li>
+                        <li><a href="https://github.com/kacperadamiak/" target="_blank"><img src="projekty/img/github.png" alt="GitHub" class="icon"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    
+    </header>
+
+  <div class="project-container">  
+    <div class="project-intro">
+      <div class="project-image">
+        <img src="projekty/img/test.jpg" alt="Screenshot projektu">
+      </div> 
+        <div class="project-info">
+            <h1 class="project-title">Nazwa projektu</h1>
+          <div class="project-details">
+            <p class="project-description">
+              Opis projektu, w którym przedstawisz cel, problemy, jakie rozwiązuje, oraz technologie, które wykorzystałeś. Możesz także dodać swoje spostrzeżenia.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Teamwork</span>
+            </div>
+          </div>
+        </div>   
+    </div>    
+    <div class="project-section">
+      <h2 class="section-title">1. O projekcie</h2>
+      <p class="section-description">
+        Celem tego zadania było skonfigurowanie zasad grupowych (GPO) w domenie
+        "mojafirma.local", która została utworzona w ramach zadania „Konfiguracja
+        Windows Server”. W ramach projektu skonfigurowano następujące polityki
+        grupowe: instalację przeglądarki Firefox za pomocą pliku MSI, ustawienie          wygaszania ekranu dla komputerów, zablokowanie dostępu do panelu sterowania
+        dla użytkowników oraz mapowanie dysku/folderu. Zadanie miało na celu zdobycie
+        praktycznych umiejętności w zakresie zarządzania politykami grupowymi w
+        środowisku Active Directory.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2 class="section-title">2. Narzędzia i Technologie</h2>
+      <p class="section-description">
+        Do zrealizowania zadania wykorzystano poniższe technologie:
+      </p>
+      <ul>
+        <li>Windows Server 2019 (Active Directory)</li>
+        <li>Windows 10 (stacje robocze)</li>
+        <li>Group Policy Management Console (GPMC)</li>
+        <li>PowerShell</li>
+        <li>Hyper-V (środowisko testowe)</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2 class="section-title">3. Przebieg Realizacji</h2>
+      <p class="section-description">
+        Przebieg realizacji zadania został opisany w poniższych krokach, obejmujących
+        konfigurację polityk grupowych (GPO) dla użytkowników i komputerów, dodanie
+        komputera do domeny oraz wymuszenie zastosowania polityk.
+      </p>
+      <h3 class="sub-section-title">Konfiguracja GPO dla użytkowników:</h3>
+      <p class="section-description">
+        Aby zrealizować polityki dotyczące użytkowników, stworzono odpowiednie
+        mapowanie folderu oraz skonfigurowano blokadę dostępu do Panelu sterowania.        
+      </p>
+      <ul>
+        <li>Mapowanie folderu: Stworzono folder na serwerze, który został
+        udostępniony i mapowany na komputerach użytkowników. W tym celu
+        użyto polityk w sekcji User Configuration → Preferences → Windows
+        Settings → Drive Maps.
+        </li>
+      </ul>
+      <figure class="section-img">
+        <img src="projekty/img/test.jpg" alt="Przykładowy obrazek">
+        <figcaption>Zrzut Ekranu 1. Udostępnienie folderu w ustawieniach.</figcaption>
+      </figure>
+
+      <ul>
+        <li>Blokada dostępu do Panelu sterowania: Skonfigurowano politykę w
+          User Configuration → Policies → Administrative Templates → Control
+          Panel, włączając opcję „Prohibit access to Control Panel and PC settings”,
+          co zablokowało dostęp do panelu sterowania dla użytkowników.
+        </li>
+      </ul>
+      <h3 class="sub-section-title">Konfiguracja GPO dla komputerów:</h3>
+      <p class="section-description">
+        Następnie skonfigurowano polityki, które dotyczyły bezpośrednio komputerów w
+        domenie, obejmujące instalację oprogramowania oraz zarządzanie wygaszaniem
+        ekranu.             
+      </p>
+      <ul>
+        <li>Instalacja przeglądarki Firefox: Pobranie pliku MSI z oficjalnej strony i
+          umieszczenie go w odpowiednim folderze udostępnionym w sieci.
+          Następnie dodano plik do polityki Computer Configuration → Policies →
+          Software Settings → Software Installation, aby zainstalować przeglądarkę
+          na komputerach w domenie.          
+        </li>
+        <li>Wygaszacz ekranu: Skonfigurowano politykę wygaszania ekranu po 30
+          sekundach nieaktywności komputera, zmieniając ustawienie w Computer
+          Configuration → Policies → Windows Settings → Security Settings → Local
+          Policies → Security Options → Interactive logon: Machine inactivity limit na
+          wartość 30 sekund.         
+        </li>
+      </ul>
+      <h3 class="sub-section-title">Wymuszenie zastosowania polityk:</h3>
+      <p class="section-description">
+        Po skonfigurowaniu polityk grupowych, aby upewnić się, że zostały one
+        zastosowane, użyto polecenia gpupdate /force na komputerach, co pozwoliło na
+        wymuszenie natychmiastowego zastosowania zasad grupowych.
+      </p>
+      <h3 class="sub-section-title">Dodanie komputera do domeny:</h3>
+      <p class="section-description">
+        Ostatnim krokiem było dodanie komputera do domeny. Komputer wirtualny z
+        systemem Windows 10 został dodany do domeny „mojafirma.local”. Zmieniono
+        nazwę komputera oraz ustawiono DNS na adres IP serwera kontrolera domeny.
+        Komputer został przypisany do odpowiedniej jednostki organizacyjnej (OU) w
+        Active Directory. Po zastosowaniu wszystkich polityk grupowych i dodaniu
+        komputera do domeny, przeprowadzono testy, aby upewnić się, że wszystkie
+        zasady działają zgodnie z wymaganiami.        
+      </p>
+    </div>
+
+      <div class="project-section">
+        <h2 class="section-title">5. Rezultaty i Wnioski</h2>
+        <p class="section-description">
+          Po skonfigurowaniu polityk grupowych (GPO) oraz dodaniu komputera do
+          domeny, wszystkie zaplanowane ustawienia zostały skutecznie wdrożone.
+          Komputer wirtualny z systemem Windows 10 został poprawnie przypisany do
+          odpowiedniej jednostki organizacyjnej w Active Directory, a polityki grupowe
+          takie jak mapowanie folderów, blokada dostępu do panelu sterowania, instalacja
+          przeglądarki Firefox oraz konfiguracja wygaszacza ekranu zostały zastosowane
+          na komputerach w domenie.
+        </p>
+        <p class="section-description">
+          Pomimo początkowych trudności z instalacją aplikacji, udało się prawidłowo
+          skonfigurować wszystkie wymagane zasady. Wnioski z realizacji zadania
+          obejmują lepsze zrozumienie działania polityk grupowych w Active Directory, a
+          także praktyczną znajomość procesu konfiguracji oraz diagnozowania problemów
+          związanych z GPO. W przyszłości, przy wdrażaniu podobnych polityk, warto
+          upewnić się, że wszystkie niezbędne pliki instalacyjne są dostępne w
+          odpowiednich lokalizacjach sieciowych.
+        </p>
+      </div>
+
+      <div class="project-summary-note">
+        <p>Projekt zrealizowany przez Kacpra Adamiaka w ramach nauki i doskonalenia umiejętności w IT.</p>
+      </div>
+    </div>
+  
+
+    
+      
+    <script src="/projekty/title.js"></script>
+
+
+    <footer class="site-footer">
+          <p>© 2025 Kacper Adamiak.</p>
+      </footer>
+      
+</body>
+</html>

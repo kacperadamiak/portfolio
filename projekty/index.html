@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/briefcase-solid.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p class="loading-text">Wczytywanie...</p>
+      </div>
+
+    
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h2>
+                    <a  class="no-style-link" href="../index.html" rel="noopener noreferrer">
+                      <i class="fa-solid fa-briefcase"></i> portfolio
+                    </a>
+                  </h2>
+            </div> 
+            <div class="name">
+                <span class="highlight"></span>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="https://kacperadamiak.info" target="_blank"><img src="../profile-icon.png" alt="Profil" class="icon"></a></li>
+                        <li><a href="https://github.com/kacperadamiak/" target="_blank"><img src="../github-icon.png" alt="GH" class="icon"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+    <div class="container">
+    
+        <div class="filter">
+            <button class="main-button" onclick="toggleFilters()">Kategoria</button>
+            <div class="filter-buttons">
+                <button class="filter-button" id="all-button" onclick="filterProjects('All', this)">Wszystkie</button>
+                <button class="filter-button" onclick="filterProjects('Network', this)">Sieci komputerowe</button>
+                <button class="filter-button" onclick="filterProjects('Programming', this)">Programowanie</button>
+                <button class="filter-button" onclick="filterProjects('OS', this)">Systemy operacyjne</button>
+            </div>
+        </div>
+        
+    
+        <main>
+            <section class="projects" id="projects"></section>
+        </main>
+    </div>
+    
+
+
+
+    <script src="display_projects.js"></script>
+    <script>
+        function toggleFilters() {
+                const filterButtons = document.querySelector('.filter-buttons');
+                filterButtons.style.display = (filterButtons.style.display === 'block') ? 'none' : 'block';
+            }
+
+            document.addEventListener('click', function(event) {
+                const filter = document.querySelector('.filter');
+                const filterButtons = document.querySelector('.filter-buttons');
+                
+                if (!filter.contains(event.target)) {
+                    filterButtons.style.display = 'none';
+                }
+            });
+
+            const filterOptions = document.querySelectorAll('.filter-button');
+            filterOptions.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    
+                    const mainButton = document.querySelector('.main-button');
+                    mainButton.textContent = button.textContent; 
+                    
+                    const filterButtons = document.querySelector('.filter-buttons');
+                    filterButtons.style.display = 'none';
+                });
+            });
+    </script>
+    <script src="title.js"></script>
+
+    <script>
+        window.addEventListener("load", function() {
+          const preloader = document.getElementById("preloader");
+          
+          preloader.classList.add("fade-out");
+    
+          preloader.addEventListener("animationend", () => {
+            preloader.style.display = "none";
+          });
+        });
+      </script>
+    
+
+    <footer class="site-footer">
+        <p>© 2025 Kacper Adamiak.</p>
+    </footer>
+</body>
+</html>

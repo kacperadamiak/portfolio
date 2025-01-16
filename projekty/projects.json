@@ -1,7 +1,7 @@
 [   {
     "title": "Konfiguracja GPO w AD i dołączenie VPC do domeny",
     "description": "Skonfigurowanie zasad grupowych (GPO) w AD, dodanie wirtualnego komputera do istniejącej domeny.",
-    "link": "projects/gpo.pdf",
+    "link": "gpo-project/index.html",
     "image": "img/windows.jpg",
     "category": "OS",
     "keywords": ["GPO","Windows Server","AD","VirtualBox"]

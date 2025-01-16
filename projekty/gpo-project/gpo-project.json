@@ -1,0 +1,59 @@
+{
+    "projectName": "Konfiguracja GPO w Active Directory",
+    "projectIntro": {
+      "image": "projekty/img/test.jpg",
+      "description": "Opis projektu, w którym przedstawisz cel, problemy, jakie rozwiązuje, oraz technologie, które wykorzystałeś.",
+      "tags": ["HTML", "CSS", "JavaScript", "Teamwork"]
+    },
+    "sections": [
+      {
+        "sectionTitle": "O projekcie",
+        "description": "Celem tego zadania było skonfigurowanie zasad grupowych (GPO) w domenie 'mojafirma.local'.",
+        "image": null
+      },
+      {
+        "sectionTitle": "Narzędzia i Technologie",
+        "description": "Do zrealizowania zadania wykorzystano poniższe technologie:",
+        "list": [
+          "Windows Server 2019 (Active Directory)",
+          "Windows 10 (stacje robocze)",
+          "Group Policy Management Console (GPMC)",
+          "PowerShell",
+          "Hyper-V (środowisko testowe)"
+        ],
+        "image": null
+      },
+      {
+        "sectionTitle": "Przebieg Realizacji",
+        "description": "Przebieg realizacji zadania został opisany w poniższych krokach...",
+        "subSections": [
+          {
+            "title": "Konfiguracja GPO dla użytkowników:",
+            "description": "Aby zrealizować polityki dotyczące użytkowników, stworzono odpowiednie mapowanie folderu...",
+            "list": [
+              "Mapowanie folderu: Stworzono folder na serwerze...",
+              "Blokada dostępu do Panelu sterowania..."
+            ],
+            "image": "projekty/img/test.jpg",
+            "caption": "Zrzut Ekranu 1. Udostępnienie folderu w ustawieniach."
+          },
+          {
+            "title": "Konfiguracja GPO dla komputerów:",
+            "description": "Następnie skonfigurowano polityki, które dotyczyły bezpośrednio komputerów w domenie...",
+            "list": [
+              "Instalacja przeglądarki Firefox...",
+              "Wygaszacz ekranu: Skonfigurowano politykę wygaszania ekranu po 30 sekundach..."
+            ],
+            "image": null
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Rezultaty i Wnioski",
+        "description": "Po skonfigurowaniu polityk grupowych (GPO) oraz dodaniu komputera do domeny, wszystkie zaplanowane ustawienia zostały skutecznie wdrożone.",
+        "image": null
+      }
+    ],
+    "summaryNote": "Projekt zrealizowany przez Kacpra Adamiaka w ramach nauki i doskonalenia umiejętności w IT."
+  }
+  
