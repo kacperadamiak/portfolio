@@ -60,7 +60,7 @@ const projectData =
         },
         {
           "type": "image",
-          "src": "gpo.jpg",
+          "src": "GPO.jpg",
           "alt": "Przykładowy obrazek",
           "caption": "Zrzut Ekranu 1. Udostępnienie folderu w ustawieniach."
         },
