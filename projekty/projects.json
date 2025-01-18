@@ -1,66 +1,67 @@
-[   {
+[
+  {
     "title": "Konfiguracja GPO w AD i dołączenie VPC do domeny",
     "description": "Skonfigurowanie zasad grupowych (GPO) w AD, dodanie wirtualnego komputera do istniejącej domeny.",
     "link": "gpo-project/index.html",
     "image": "img/windows.jpg",
     "category": "OS",
-    "keywords": ["GPO","Windows Server","AD","VirtualBox"]
-    }, 
-    {
+    "keywords": ["GPO", "Windows Server", "AD", "VirtualBox"]
+  },
+  {
     "title": "Podział LAN na podsieci",
     "description": "Proces podziału sieci na dwie równe podsieci oraz nadanie statycznych adresów dla urządzeń końcowych.",
     "link": "projects/Podsieci.pdf",
     "image": "img/sieci.jpg",
     "category": "Network",
-    "keywords": ["LAN","Subnetting","Cisco Packet Tracer"]
-    },
-    {
-        "title": "Strona profilowa",
-        "description": "Osobista strona internetowa prezentująca moje umiejętności, edukację i informacje o mnie.",
-        "link": "projects/Strona_Profilowa.pdf",
-        "image": "img/code.jpg",
-        "category": "Programming",
-        "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
-    },
-    
-    {
-        "title": "Konfiguracja LAN z serwerem DHCP",
-        "description": "Proces konfiguracji sieci LAN z serwerem DHCP w środowisku symulacyjnym Cisco Packet Tracer.",
-        "link": "projects/LAN_DHCP.pdf",
-        "image": "img/sieci.jpg",
-        "category": "Network",
-        "keywords": ["LAN","DHCP","Cisco Packet Tracer"]
-    },
-    {
-        "title": "Portfolio",
-        "description": "Portfolio w postaci strony internetowej zawierające zrealizowane projekty.",
-        "link": "projects/Portfolio.pdf",
-        "image": "img/code.jpg",
-        "category": "Programming",
-        "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
-    },
-    {
-        "title": "Konfiguracja Active Directory",
-        "description": "Instalacja Windows Server 2016 oraz konfiguracja Active Directory w środowisku wirtualnym",
-        "link": "projects/win_server_conf.pdf",
-        "image": "img/windows.jpg",
-        "category": "OS",
-        "keywords": ["Windows Server","AD","VirtualBox"]
-    },
-    {
-        "title": "Konwerter żużlowy",
-        "description": "Aplikacja umożliwiająca konwersję wyników meczów żużlowych z formatu tabelarycznego na biegowy.",
-        "link": "projects/Konwerter.pdf",
-        "image": "img/code.jpg",
-        "category": "Programming",
-        "keywords": ["HTML", "XAMPP", "PHP", "Apache"]
-    },
-         {
-        "title": "Konfiguracja VLAN na przełączniku",
-        "description": "Utworzenie dwóch VLAN-ów na przełączniku, przypisanie portów oraz testowanie komunikacji między urządzeniami.",
-        "link": "projects/vlan.pdf",
-        "image": "img/sieci.jpg",
-        "category": "Network",
-        "keywords": ["VLAN","Cisco Packet Tracer"]
-        }
+    "keywords": ["LAN", "Subnetting", "Cisco Packet Tracer"]
+  },
+  {
+    "title": "Strona profilowa",
+    "description": "Osobista strona internetowa prezentująca moje umiejętności, edukację i informacje o mnie.",
+    "link": "projects/Strona_Profilowa.pdf",
+    "image": "img/code.jpg",
+    "category": "Programming",
+    "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
+  },
+
+  {
+    "title": "Konfiguracja LAN z serwerem DHCP",
+    "description": "Proces konfiguracji sieci LAN z serwerem DHCP w środowisku symulacyjnym Cisco Packet Tracer.",
+    "link": "projects/LAN_DHCP.pdf",
+    "image": "img/sieci.jpg",
+    "category": "Network",
+    "keywords": ["LAN", "DHCP", "Cisco Packet Tracer"]
+  },
+  {
+    "title": "Portfolio",
+    "description": "Portfolio w postaci strony internetowej zawierające zrealizowane projekty.",
+    "link": "projects/Portfolio.pdf",
+    "image": "img/code.jpg",
+    "category": "Programming",
+    "keywords": ["HTML", "CSS", "JavaScript", "VSC"]
+  },
+  {
+    "title": "Konfiguracja Active Directory",
+    "description": "Instalacja Windows Server 2016 oraz konfiguracja Active Directory w środowisku wirtualnym",
+    "link": "projects/win_server_conf.pdf",
+    "image": "img/windows.jpg",
+    "category": "OS",
+    "keywords": ["Windows Server", "AD", "VirtualBox"]
+  },
+  {
+    "title": "Konwerter żużlowy",
+    "description": "Aplikacja umożliwiająca konwersję wyników meczów żużlowych z formatu tabelarycznego na biegowy.",
+    "link": "projects/Konwerter.pdf",
+    "image": "img/code.jpg",
+    "category": "Programming",
+    "keywords": ["HTML", "XAMPP", "PHP", "Apache"]
+  },
+  {
+    "title": "Konfiguracja VLAN na przełączniku",
+    "description": "Utworzenie dwóch VLAN-ów na przełączniku, przypisanie portów oraz testowanie komunikacji między urządzeniami.",
+    "link": "projects/vlan.pdf",
+    "image": "img/sieci.jpg",
+    "category": "Network",
+    "keywords": ["VLAN", "Cisco Packet Tracer"]
+  }
 ]
